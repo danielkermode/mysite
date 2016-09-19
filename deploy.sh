@@ -1,6 +1,6 @@
 serviceId="33932a9d"
 
-if [ "$2" = "fast" ]
+if [ "$1" = "fast" ]
 then
   docker run --env-file secrets/Dockercreds dockercloud/cli service redeploy $serviceId
 else
